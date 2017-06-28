@@ -8,6 +8,31 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="24" Grid.Column="0" Grid.Row="0">BlueNinajaConsole</TextBlock>
+        <TextBlock FontSize="18" Grid.Column="1" Grid.Row="0">made by teru</TextBlock>
+        <TextBlock FontSize="18" Grid.Column="2" Grid.Row="0">Graphics</TextBlock>
+        <Grid Grid.Column="0" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Button Name="BtnConnect" Content="Connect" Click="BtnConnect_Click" Grid.Row="0"></Button>
+            <TextBox Name="Status" Grid.Row="1"/>
+            <Button Name="BtnClear" Content="Claer" Click="BtnClear_Click" Grid.Row="2"></Button>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Name="Numbers">
+            
+        </Grid>
+        <Canvas Grid.Column="2" Grid.Row="1" Background="WhiteSmoke"/>
     </Grid>
 </Page>
